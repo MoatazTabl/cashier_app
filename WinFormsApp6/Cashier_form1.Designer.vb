@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class Form1
+Partial Class Cashier_form1
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -29,7 +29,7 @@ Partial Class Form1
         Me.Id = New System.Windows.Forms.TextBox()
         Me.quantity = New System.Windows.Forms.TextBox()
         Me.Price = New System.Windows.Forms.TextBox()
-        Me.Name = New System.Windows.Forms.TextBox()
+        Me.text_box = New System.Windows.Forms.TextBox()
         Me.selling_price = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -112,13 +112,13 @@ Partial Class Form1
         Me.Price.Size = New System.Drawing.Size(183, 20)
         Me.Price.TabIndex = 4
         '
-        'Name
+        'text_box
         '
-        Me.Name.BackColor = System.Drawing.Color.LavenderBlush
-        Me.Name.Location = New System.Drawing.Point(562, 54)
-        Me.Name.Name = "Name"
-        Me.Name.Size = New System.Drawing.Size(183, 20)
-        Me.Name.TabIndex = 1
+        Me.text_box.BackColor = System.Drawing.Color.LavenderBlush
+        Me.text_box.Location = New System.Drawing.Point(562, 54)
+        Me.text_box.Name = "text_box"
+        Me.text_box.Size = New System.Drawing.Size(183, 20)
+        Me.text_box.TabIndex = 1
         '
         'selling_price
         '
@@ -190,7 +190,7 @@ Partial Class Form1
         Me.DataGridView1.Size = New System.Drawing.Size(810, 189)
         Me.DataGridView1.TabIndex = 17
         '
-        'Form1
+        'Cashier_form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -203,7 +203,7 @@ Partial Class Form1
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.selling_price)
-        Me.Controls.Add(Me.Name)
+        Me.Controls.Add(Me.text_box)
         Me.Controls.Add(Me.Price)
         Me.Controls.Add(Me.quantity)
         Me.Controls.Add(Me.Id)
@@ -212,7 +212,7 @@ Partial Class Form1
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Name = "Form1"
+        'Me.Name = "Cashier_form1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Cashier"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -236,4 +236,6 @@ Partial Class Form1
     Friend WithEvents Label4 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents Name1 As TextBox
+    Friend WithEvents text_box As TextBox
 End Class

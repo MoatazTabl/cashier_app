@@ -10,7 +10,7 @@ Public Class Products
         conn = New SqlConnection("Data Source=localhost;Initial Catalog=MedicalHouse;Integrated Security=True")
 
         conn.Open()
-        da = New SqlDataAdapter("select * from Products", conn)
+        da = New SqlDataAdapter("select * from Products1", conn)
         table = New DataTable()
 
         da.Fill(table)
