@@ -17,7 +17,7 @@ Public Class Cashier_form1
         Dim dr As DataRow = ds.Tables("products1").NewRow()
 
         dr("id") = Val(Id.Text)
-        dr("nameofproduct") = Val(text_box.Text)
+        dr("name") = text_box.Text
         dr("quantity") = Val(quantity.Text)
         dr("price") = Val(Price.Text)
         dr("selling price") = Val(selling_price.Text)
