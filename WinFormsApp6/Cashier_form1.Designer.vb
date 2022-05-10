@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class Cashier_form1
+Partial Class Cashierform
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,10 +22,10 @@ Partial Class Cashier_form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button5 = New System.Windows.Forms.Button()
+        Me.delete_button = New System.Windows.Forms.Button()
+        Me.insert_button = New System.Windows.Forms.Button()
+        Me.disply_button = New System.Windows.Forms.Button()
+        Me.edit_button = New System.Windows.Forms.Button()
         Me.Id = New System.Windows.Forms.TextBox()
         Me.quantity = New System.Windows.Forms.TextBox()
         Me.Price = New System.Windows.Forms.TextBox()
@@ -40,53 +40,53 @@ Partial Class Cashier_form1
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'Button1
+        'delete_button
         '
-        Me.Button1.BackColor = System.Drawing.Color.LavenderBlush
-        Me.Button1.Font = New System.Drawing.Font("Arabic Typesetting", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Button1.Location = New System.Drawing.Point(47, 461)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(136, 72)
-        Me.Button1.TabIndex = 0
-        Me.Button1.TabStop = False
-        Me.Button1.Text = "حذف"
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.delete_button.BackColor = System.Drawing.Color.LavenderBlush
+        Me.delete_button.Font = New System.Drawing.Font("Arabic Typesetting", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.delete_button.Location = New System.Drawing.Point(47, 461)
+        Me.delete_button.Name = "delete_button"
+        Me.delete_button.Size = New System.Drawing.Size(136, 72)
+        Me.delete_button.TabIndex = 0
+        Me.delete_button.TabStop = False
+        Me.delete_button.Text = "حذف"
+        Me.delete_button.UseVisualStyleBackColor = False
         '
-        'Button2
+        'insert_button
         '
-        Me.Button2.BackColor = System.Drawing.Color.LavenderBlush
-        Me.Button2.Font = New System.Drawing.Font("Arabic Typesetting", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Button2.Location = New System.Drawing.Point(284, 461)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(136, 72)
-        Me.Button2.TabIndex = 1
-        Me.Button2.TabStop = False
-        Me.Button2.Text = "اضافة"
-        Me.Button2.UseVisualStyleBackColor = False
+        Me.insert_button.BackColor = System.Drawing.Color.LavenderBlush
+        Me.insert_button.Font = New System.Drawing.Font("Arabic Typesetting", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.insert_button.Location = New System.Drawing.Point(284, 461)
+        Me.insert_button.Name = "insert_button"
+        Me.insert_button.Size = New System.Drawing.Size(136, 72)
+        Me.insert_button.TabIndex = 1
+        Me.insert_button.TabStop = False
+        Me.insert_button.Text = "اضافة"
+        Me.insert_button.UseVisualStyleBackColor = False
         '
-        'Button4
+        'disply_button
         '
-        Me.Button4.BackColor = System.Drawing.Color.LavenderBlush
-        Me.Button4.Font = New System.Drawing.Font("Arabic Typesetting", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Button4.Location = New System.Drawing.Point(497, 461)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(136, 72)
-        Me.Button4.TabIndex = 3
-        Me.Button4.TabStop = False
-        Me.Button4.Text = "عرض الصنف"
-        Me.Button4.UseVisualStyleBackColor = False
+        Me.disply_button.BackColor = System.Drawing.Color.LavenderBlush
+        Me.disply_button.Font = New System.Drawing.Font("Arabic Typesetting", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.disply_button.Location = New System.Drawing.Point(497, 461)
+        Me.disply_button.Name = "disply_button"
+        Me.disply_button.Size = New System.Drawing.Size(136, 72)
+        Me.disply_button.TabIndex = 3
+        Me.disply_button.TabStop = False
+        Me.disply_button.Text = "عرض الصنف"
+        Me.disply_button.UseVisualStyleBackColor = False
         '
-        'Button5
+        'edit_button
         '
-        Me.Button5.BackColor = System.Drawing.Color.LavenderBlush
-        Me.Button5.Font = New System.Drawing.Font("Arabic Typesetting", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Button5.Location = New System.Drawing.Point(721, 461)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(136, 72)
-        Me.Button5.TabIndex = 4
-        Me.Button5.TabStop = False
-        Me.Button5.Text = "تعديل"
-        Me.Button5.UseVisualStyleBackColor = False
+        Me.edit_button.BackColor = System.Drawing.Color.LavenderBlush
+        Me.edit_button.Font = New System.Drawing.Font("Arabic Typesetting", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.edit_button.Location = New System.Drawing.Point(721, 461)
+        Me.edit_button.Name = "edit_button"
+        Me.edit_button.Size = New System.Drawing.Size(136, 72)
+        Me.edit_button.TabIndex = 4
+        Me.edit_button.TabStop = False
+        Me.edit_button.Text = "تعديل"
+        Me.edit_button.UseVisualStyleBackColor = False
         '
         'Id
         '
@@ -184,13 +184,14 @@ Partial Class Cashier_form1
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(47, 224)
+        Me.DataGridView1.Location = New System.Drawing.Point(148, 223)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowTemplate.Height = 25
-        Me.DataGridView1.Size = New System.Drawing.Size(810, 189)
+        Me.DataGridView1.Size = New System.Drawing.Size(548, 189)
         Me.DataGridView1.TabIndex = 17
+        Me.DataGridView1.TabStop = False
         '
-        'Cashier_form1
+        'Cashierform
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -207,12 +208,12 @@ Partial Class Cashier_form1
         Me.Controls.Add(Me.Price)
         Me.Controls.Add(Me.quantity)
         Me.Controls.Add(Me.Id)
-        Me.Controls.Add(Me.Button5)
-        Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.edit_button)
+        Me.Controls.Add(Me.disply_button)
+        Me.Controls.Add(Me.insert_button)
+        Me.Controls.Add(Me.delete_button)
         Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        'Me.Name = "Cashier_form1"
+        Me.Name = "Cashierform"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Cashier"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -221,14 +222,14 @@ Partial Class Cashier_form1
 
     End Sub
 
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button4 As Button
-    Friend WithEvents Button5 As Button
+    Friend WithEvents delete_button As Button
+    Friend WithEvents insert_button As Button
+    Friend WithEvents disply_button As Button
+    Friend WithEvents edit_button As Button
     Friend WithEvents Id As TextBox
     Friend WithEvents quantity As TextBox
     Friend WithEvents Price As TextBox
-    Friend WithEvents Name As TextBox
+
     Friend WithEvents selling_price As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label

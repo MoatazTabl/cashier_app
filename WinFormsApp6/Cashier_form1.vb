@@ -1,7 +1,9 @@
 ﻿Imports System.Data.SqlClient
-Public Class Cashier_form1
+Public Class Cashierform
     Dim conn As SqlConnection
+    Dim cmd As SqlCommand
     Dim da As SqlDataAdapter
+    Dim reader As SqlDataReader
 
     Dim ds As DataSet
     Private Sub Cashier_form_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -11,9 +13,10 @@ Public Class Cashier_form1
         Dim cb As New SqlCommandBuilder(da)
         ds = New DataSet()
         da.Fill(ds, "products1")
+
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles insert_button.Click
         Dim dr As DataRow = ds.Tables("products1").NewRow()
 
         dr("id") = Val(Id.Text)
@@ -25,5 +28,22 @@ Public Class Cashier_form1
         da.Update(ds, "products1")
     End Sub
 
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles disply_button.Click
+        Try
+            If Id.TextLength > 0 Then
+                cmd = New SqlCommand("select * from products1 where id=" & Val(Id.Text), conn)
+                reader = cmd.ExecuteReader()
+                reader.Read()
+                text_box.Text = reader(1)
+                quantity.Text = reader(2)
+                Price.Text = reader(3)
+                selling_price.Text = reader(4)
+            Else
+                DataGridView1.DataBindings.Add("datasource", ds, "products1")
+            End If
+        Catch ex As Exception
+            MessageBox.Show(ex.Message)
+        End Try
 
+    End Sub
 End Class

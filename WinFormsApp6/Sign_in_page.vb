@@ -34,7 +34,7 @@ Public Class Form3
                 a.Show()
                 Me.Hide()
             Else
-                Dim u As New Cashier_form1
+                Dim u As New Cashierform
                 u.Show()
                 Me.Hide()
             End If

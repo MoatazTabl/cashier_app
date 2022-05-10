@@ -2,8 +2,7 @@
 Public Class Products
     Dim conn As SqlConnection
     Dim da As SqlDataAdapter
-    Dim cmd As SqlCommand
-    Dim dr As SqlDataReader
+
     Dim table As DataTable
 
     Private Sub Products_Load(sender As Object, e As EventArgs) Handles MyBase.Load
