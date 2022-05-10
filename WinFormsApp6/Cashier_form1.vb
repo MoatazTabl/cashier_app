@@ -4,10 +4,11 @@ Public Class Cashierform
     Dim cmd As SqlCommand
     Dim da As SqlDataAdapter
     Dim reader As SqlDataReader
-
+    Dim dr As DataRow
     Dim ds As DataSet
+    Dim cb As SqlCommandBuilder
 
-    Public Function Clear_1()
+    Public Function Clear1()
         Id.Clear()
         text_box.Clear()
         quantity.Clear()
@@ -18,14 +19,14 @@ Public Class Cashierform
         conn = New SqlConnection("Data Source=localhost;Initial Catalog=MedicalHouse;Integrated Security=True")
         conn.Open()
         da = New SqlDataAdapter("select * from products1", conn)
-        Dim cb As New SqlCommandBuilder(da)
+        cb = New SqlCommandBuilder(da)
         ds = New DataSet()
         da.Fill(ds, "products1")
 
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles insert_button.Click
-        Dim dr As DataRow = ds.Tables("products1").NewRow()
+        dr = ds.Tables("products1").NewRow()
 
         dr("id") = Val(Id.Text)
         dr("name") = text_box.Text
@@ -35,7 +36,7 @@ Public Class Cashierform
         ds.Tables("products1").Rows.Add(dr)
         da.Update(ds, "products1")
         MessageBox.Show("Done", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
-        Clear_1()
+        Clear1()
 
     End Sub
 
@@ -91,7 +92,7 @@ Public Class Cashierform
             End If
         Next
         MessageBox.Show("Done", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
-        Clear_1()
+        Clear1()
 
         da.Update(ds, "products1")
     End Sub
