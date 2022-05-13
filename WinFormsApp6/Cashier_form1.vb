@@ -52,6 +52,7 @@ Public Class Cashierform
                 selling_price.Text = reader(4)
                 conn.Close()
             Else
+                DataGridView1.DataBindings.Clear()
                 DataGridView1.DataBindings.Add("datasource", ds, "products1")
             End If
         Catch ex As Exception

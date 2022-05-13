@@ -18,8 +18,6 @@ Public Class Form3
             MessageBox.Show("Data base not found", "Erorr", MessageBoxButtons.OK, MessageBoxIcon.Warning)
         End If
 
-
-
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Login_button.Click

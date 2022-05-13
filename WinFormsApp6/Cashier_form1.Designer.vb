@@ -44,6 +44,7 @@ Partial Class Cashierform
         '
         Me.delete_button.BackColor = System.Drawing.Color.LavenderBlush
         Me.delete_button.Font = New System.Drawing.Font("Arabic Typesetting", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.delete_button.ForeColor = System.Drawing.Color.Red
         Me.delete_button.Location = New System.Drawing.Point(47, 461)
         Me.delete_button.Name = "delete_button"
         Me.delete_button.Size = New System.Drawing.Size(136, 72)

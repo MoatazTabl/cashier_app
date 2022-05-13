@@ -2,7 +2,6 @@
 Public Class Form4
     Dim conn As SqlConnection
     Dim da As SqlDataAdapter
-    Dim table As DataTable
     Dim dr As DataRow
     Dim ds As DataSet
     Dim cb As SqlCommandBuilder
@@ -18,8 +17,6 @@ Public Class Form4
         user_name_text_box.Clear()
         password_text_box.Clear()
         role_type_cb.SelectedIndex = -1
-
-
     End Function
 
     Private Sub Form4_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -29,8 +26,6 @@ Public Class Form4
         cb = New SqlCommandBuilder(da)
         ds = New DataSet()
         da.Fill(ds, "employees")
-
-
     End Sub
 
     Private Sub Add_button_Click(sender As Object, e As EventArgs) Handles Add_button.Click
@@ -43,7 +38,6 @@ Public Class Form4
         dr("address") = address_text_box.Text
         dr("user_name") = user_name_text_box.Text
         dr("password") = password_text_box.Text
-
 
 
         ds.Tables("employees").Rows.Add(dr)
@@ -71,6 +65,8 @@ Public Class Form4
 
                 End Using
             Else
+                employee_data.DataBindings.Clear()
+
                 employee_data.DataBindings.Add("datasource", ds, "employees")
             End If
         Catch ex As Exception
