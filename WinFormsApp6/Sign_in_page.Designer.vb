@@ -32,6 +32,7 @@ Partial Class Form3
         Me.Login_button = New System.Windows.Forms.Button()
         Me.cbuser_type = New System.Windows.Forms.ComboBox()
         Me.Role_button = New System.Windows.Forms.Label()
+        Me.bk_button = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -122,10 +123,10 @@ Partial Class Form3
         '
         Me.Login_button.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.Login_button.Font = New System.Drawing.Font("Segoe UI Symbol", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Login_button.Location = New System.Drawing.Point(599, 341)
+        Me.Login_button.Location = New System.Drawing.Point(666, 341)
         Me.Login_button.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Login_button.Name = "Login_button"
-        Me.Login_button.Size = New System.Drawing.Size(108, 34)
+        Me.Login_button.Size = New System.Drawing.Size(86, 34)
         Me.Login_button.TabIndex = 8
         Me.Login_button.Text = "Login"
         Me.Login_button.UseVisualStyleBackColor = False
@@ -153,12 +154,25 @@ Partial Class Form3
         Me.Role_button.TabIndex = 10
         Me.Role_button.Text = "Role"
         '
+        'bk_button
+        '
+        Me.bk_button.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.bk_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.bk_button.Font = New System.Drawing.Font("Segoe UI Symbol", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.bk_button.Location = New System.Drawing.Point(564, 342)
+        Me.bk_button.Name = "bk_button"
+        Me.bk_button.Size = New System.Drawing.Size(86, 34)
+        Me.bk_button.TabIndex = 9
+        Me.bk_button.Text = "Back"
+        Me.bk_button.UseVisualStyleBackColor = False
+        '
         'Form3
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.WinFormsApp6.My.Resources.Resources.imageedit_4_6475057521
         Me.ClientSize = New System.Drawing.Size(784, 461)
+        Me.Controls.Add(Me.bk_button)
         Me.Controls.Add(Me.Role_button)
         Me.Controls.Add(Me.cbuser_type)
         Me.Controls.Add(Me.Login_button)
@@ -189,4 +203,5 @@ Partial Class Form3
     Friend WithEvents Login_button As Button
     Friend WithEvents cbuser_type As ComboBox
     Friend WithEvents Role_button As Label
+    Friend WithEvents bk_button As Button
 End Class

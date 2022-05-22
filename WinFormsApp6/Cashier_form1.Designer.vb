@@ -37,6 +37,7 @@ Partial Class Cashierform
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.bk_button = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -45,7 +46,7 @@ Partial Class Cashierform
         Me.delete_button.BackColor = System.Drawing.Color.LavenderBlush
         Me.delete_button.Font = New System.Drawing.Font("Arabic Typesetting", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.delete_button.ForeColor = System.Drawing.Color.Red
-        Me.delete_button.Location = New System.Drawing.Point(47, 461)
+        Me.delete_button.Location = New System.Drawing.Point(102, 461)
         Me.delete_button.Name = "delete_button"
         Me.delete_button.Size = New System.Drawing.Size(136, 72)
         Me.delete_button.TabIndex = 0
@@ -81,7 +82,7 @@ Partial Class Cashierform
         '
         Me.edit_button.BackColor = System.Drawing.Color.LavenderBlush
         Me.edit_button.Font = New System.Drawing.Font("Arabic Typesetting", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.edit_button.Location = New System.Drawing.Point(721, 461)
+        Me.edit_button.Location = New System.Drawing.Point(674, 461)
         Me.edit_button.Name = "edit_button"
         Me.edit_button.Size = New System.Drawing.Size(136, 72)
         Me.edit_button.TabIndex = 4
@@ -185,12 +186,24 @@ Partial Class Cashierform
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(148, 223)
+        Me.DataGridView1.Location = New System.Drawing.Point(152, 220)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowTemplate.Height = 25
         Me.DataGridView1.Size = New System.Drawing.Size(548, 189)
         Me.DataGridView1.TabIndex = 17
         Me.DataGridView1.TabStop = False
+        '
+        'bk_button
+        '
+        Me.bk_button.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.bk_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.bk_button.Font = New System.Drawing.Font("Segoe UI Symbol", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.bk_button.Location = New System.Drawing.Point(10, 515)
+        Me.bk_button.Name = "bk_button"
+        Me.bk_button.Size = New System.Drawing.Size(86, 34)
+        Me.bk_button.TabIndex = 18
+        Me.bk_button.Text = "Back"
+        Me.bk_button.UseVisualStyleBackColor = False
         '
         'Cashierform
         '
@@ -198,6 +211,7 @@ Partial Class Cashierform
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.ClientSize = New System.Drawing.Size(884, 561)
+        Me.Controls.Add(Me.bk_button)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label4)
@@ -240,4 +254,5 @@ Partial Class Cashierform
     Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents Name1 As TextBox
     Friend WithEvents text_box As TextBox
+    Friend WithEvents bk_button As Button
 End Class

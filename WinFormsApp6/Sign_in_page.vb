@@ -41,5 +41,12 @@ Public Class Form3
         End If
 
     End Sub
+
+    Private Sub bk_button_Click(sender As Object, e As EventArgs) Handles bk_button.Click
+        Dim m As New Form2
+        m.Show()
+        Me.Hide()
+
+    End Sub
 End Class
 

@@ -43,6 +43,7 @@ Partial Class Form4
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.age_text_box = New System.Windows.Forms.TextBox()
+        Me.bk_button = New System.Windows.Forms.Button()
         CType(Me.employee_data, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -118,7 +119,7 @@ Partial Class Form4
         Me.Delete_button.BackColor = System.Drawing.Color.LavenderBlush
         Me.Delete_button.Font = New System.Drawing.Font("Arabic Typesetting", 22.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Delete_button.ForeColor = System.Drawing.Color.Red
-        Me.Delete_button.Location = New System.Drawing.Point(68, 428)
+        Me.Delete_button.Location = New System.Drawing.Point(110, 428)
         Me.Delete_button.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Delete_button.Name = "Delete_button"
         Me.Delete_button.Size = New System.Drawing.Size(128, 56)
@@ -132,7 +133,7 @@ Partial Class Form4
         Me.Add_button.BackColor = System.Drawing.Color.LavenderBlush
         Me.Add_button.Font = New System.Drawing.Font("Arabic Typesetting", 22.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Add_button.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Add_button.Location = New System.Drawing.Point(251, 428)
+        Me.Add_button.Location = New System.Drawing.Point(269, 428)
         Me.Add_button.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Add_button.Name = "Add_button"
         Me.Add_button.Size = New System.Drawing.Size(128, 56)
@@ -261,12 +262,25 @@ Partial Class Form4
         Me.age_text_box.Size = New System.Drawing.Size(168, 23)
         Me.age_text_box.TabIndex = 3
         '
+        'bk_button
+        '
+        Me.bk_button.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.bk_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.bk_button.Font = New System.Drawing.Font("Segoe UI Symbol", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.bk_button.Location = New System.Drawing.Point(12, 450)
+        Me.bk_button.Name = "bk_button"
+        Me.bk_button.Size = New System.Drawing.Size(86, 34)
+        Me.bk_button.TabIndex = 23
+        Me.bk_button.Text = "Back"
+        Me.bk_button.UseVisualStyleBackColor = False
+        '
         'Form4
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.ClientSize = New System.Drawing.Size(784, 485)
+        Me.Controls.Add(Me.bk_button)
         Me.Controls.Add(Me.age_text_box)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Label7)
@@ -319,4 +333,5 @@ Partial Class Form4
     Friend WithEvents Label7 As Label
     Friend WithEvents Label8 As Label
     Friend WithEvents age_text_box As TextBox
+    Friend WithEvents bk_button As Button
 End Class

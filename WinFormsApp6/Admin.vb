@@ -112,9 +112,15 @@ Public Class Form4
             End If
         Next
         answer = MessageBox.Show(
-            "are you sure you want to delete this record?", "Warrnning", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning)
+            "are you sure you want to delete this record?", "Warning", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning)
         If answer = System.Windows.Forms.DialogResult.No Then Exit Sub
         dr.Delete()
         da.Update(ds, "employees")
+    End Sub
+
+    Private Sub bk_button_Click(sender As Object, e As EventArgs) Handles bk_button.Click
+        Dim m As New Form3
+        m.Show()
+        Me.Hide()
     End Sub
 End Class
